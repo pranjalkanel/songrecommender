@@ -1,0 +1,11 @@
+# AI Concepts
+## Content Based Filtering
+The base algorithm for this project is content based filtering. In its simplest form, content based filtering finds available similar content to user’s preferred content. This algorithm compares attributes for existing content with attributes of user’s preferred content which allows it to assign ‘similarity score’ to all of the compared content. Items with the highest similarity score can then be used for various purposes depending upon its implementation.
+
+## TF * IDF Algorithm with Cosine Similarity
+TF stands for term frequency and IDF stands for inverse document frequency. This algorithm is used to find the number of occurrences of an attribute in a data set (TF) and importance of the attribute for a given item (IDF). As discussed, for content based filtering, it requires calculating similarity score. This similarity score is the cosine similarity between the items in the data set and the user’s item.
+Cosine similarity is calculated by determining the cosine of the angle between two vectors which is given by the TF * IDF algorithm in this project. Higher the score, the more similar they are.
+1.2 Scope of Concept Implementation
+Recommendation systems are implemented by analyzing a user’s behavior and comparing it with the available data to list out products to be shown to a user. This can be achieved using various techniques and algorithms but for this project, mentioned AI concepts are to be used.
+These algorithms are meant to be used in conjunction to form the song recommendation system for this project. Following content based filtering, similar songs to a user’s preferred songs are filtered using TF * IDF algorithm with their cosine similarity. Most similar songs are then recommended to the user.
+The mentioned use of concepts is in enterprise application where data of every user is stored which can be used to recommend a song based on the user’s preferences. However, for this application in development, a user is asked to enter a song which is then used to recommend songs based on the given song.
